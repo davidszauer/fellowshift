@@ -25,6 +25,18 @@ Open `http://localhost:3000`.
 
 Note: the app uses locale-prefixed routes; visiting `/` redirects to your best-matching UI language (and stores it in a cookie).
 
+## Middle-earth (LOTR) campaign
+
+There’s a LOTR-inspired campaign (`lotr-ru`) with locations like Bag End, The Green Dragon, and Bree.
+
+- The *target text* is Russian (so you’re practicing RU touch-typing)
+- The UI is available in `en` / `ru` / `hu`
+- Lessons include an English translation + Latin transliteration to help you learn as you type
+
+Example lesson URL:
+
+`http://localhost:3000/en/play/lotr-ru/bag-end-1`
+
 ## Playing a lesson
 
 Routes are:
@@ -33,7 +45,7 @@ Routes are:
 
 Example:
 
-`http://localhost:3000/en/play/lotr-ru/bag-end-1`
+`http://localhost:3000/en/play/starter-en/warmup-1`
 
 ## Scripts
 
