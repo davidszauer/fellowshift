@@ -1,0 +1,25 @@
+.DS_Store
+.env*
+!.env.example
+
+# Next.js
+.next/
+out/
+
+# Dependencies
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+
+# Testing
+coverage/
+
+# Codex
+.codex/

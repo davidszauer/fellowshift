@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* From the provided mock (code.html), moved into globals */
+.wood-switch {
+  background: #8b5a2b;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.05) 0px,
+    rgba(255, 255, 255, 0.05) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(255, 255, 255, 0.2);
+}
+
+.lotr-toggle {
+  background: #f4ecd8;
+  border: 1px solid rgba(94, 58, 23, 0.14);
+  box-shadow: inset 0 2px 6px rgba(94, 58, 23, 0.14), inset 0 -1px 0 rgba(255, 255, 255, 0.85);
+}
+.lotr-toggle::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  pointer-events: none;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.55);
+  opacity: 0.7;
+}
+
+.lotr-ring-thumb {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 28px;
+  height: 28px;
+  transform: translate(-50%, -50%);
+  border-radius: 9999px;
+  background: conic-gradient(
+    from 140deg,
+    #fff2c8 0deg,
+    #f6d27a 60deg,
+    #d4a017 160deg,
+    #f6d27a 260deg,
+    #fff2c8 360deg
+  );
+  box-shadow: 0 3px 10px rgba(94, 58, 23, 0.18);
+  -webkit-mask: radial-gradient(transparent 58%, #000 60%);
+  mask: radial-gradient(transparent 58%, #000 60%);
+}
+.lotr-ring-thumb::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 9999px;
+  background: conic-gradient(
+    from 120deg,
+    rgba(255, 255, 255, 0.45) 0deg,
+    rgba(255, 255, 255, 0.12) 90deg,
+    rgba(0, 0, 0, 0.08) 180deg,
+    rgba(255, 255, 255, 0.12) 270deg,
+    rgba(255, 255, 255, 0.45) 360deg
+  );
+  opacity: 0.55;
+  -webkit-mask: radial-gradient(transparent 58%, #000 60%);
+  mask: radial-gradient(transparent 58%, #000 60%);
+}
+
+.keycap {
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  background: linear-gradient(to bottom, #f0ebe0, #e6ded0);
+}
+.keycap:active,
+.keycap.pressed {
+  transform: translateY(4px);
+  box-shadow: var(--tw-shadow-stone-pressed);
+  background: #e0d8c8;
+}
+
+.zone-pinky {
+  border-bottom-color: #a3b899;
+  color: #5c6b54;
+}
+.zone-ring {
+  border-bottom-color: #d6c68b;
+  color: #7a6f42;
+}
+.zone-middle {
+  border-bottom-color: #c9a691;
+  color: #7d5e4a;
+}
+.zone-index {
+  border-bottom-color: #b0a89b;
+  color: #6b6357;
+}
+
+.keycap.active {
+  color: #6a8c3d !important;
+  border-bottom-color: #6a8c3d !important;
+  background: #eef5e6 !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f4ecd8;
+}
+::-webkit-scrollbar-thumb {
+  background: #d6c68b;
+  border-radius: 4px;
+}
